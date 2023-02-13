@@ -4,61 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIG | Reviews e Notícias sobre Indie Games</title>
+
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <title>RankedIG</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list-nested"></i></li>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="reviews.html">REVIEWS</a></li>
-                <li><a href="">NOTÍCIAS</a></li>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                    <a href="" class="text_menu">
+                        <li class="li_text">HOME</li>
+                    </a>
+
+                    <a href="" class="text_menu">
+                        <li class="li_text">REVIEWS</li>
+                    </a>
+
+                <div class="div_titulo">
+                    <h1 id="titulo_header">RankedIndieGames</h1>
+                </div>
+
+                    <a href="" class="text_menu">
+                        <li class="li_text">NEWS</li>
+                    </a>
+        
+                    <a href="" class="text_menu">
+                        <li class="li_text">TRAILERS</li>
+                    </a>
+
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>SEJA-BEM VINDO AO RANKED INDIE GAMES</h1>
-        <p>Este site tem como objetivo apresentar notícias e reviews de jogos Indies, seja de console ou computador.</p>
+    <section id="secao_inicial">
+        <h2 id="titulo_inicial">SEJA BEM-VINDO(A) AO RIG!</h2>
+        <p id="p_inicial">Aqui você encontrará conteúdos relacionados ao mundo dos indie games.</p>
     </section>
 
-    <section>
-        <h2>JOGOS INDIES MAIS AMADOS POR GAMERS:</h2>
-        <div>
-            <img src="https://t.ctcdn.com.br/kqxkZh0F8N9YGyZbkl32kPY3bkc=/512x288/smart/filters:format(webp)/i575891.jpeg" 
-                alt="Imagem do game indie Minecraft">
-            <p>Minecraft</p>
+    <section id="secao_topicos">
+        <div class="div_topicos">
+            <h3 class="titulo_topico">O QUE SÃO "INDIE GAMES" ?</h3>
 
-            <img src="https://1.bp.blogspot.com/-HIHxtuKAEQI/W9zlj13aMxI/AAAAAAAABDU/IAIv9KqZMDU_4L9olZ8B6t0ueu819fpogCLcBGAs/w1200-h630-p-k-no-nu/undertale.jpg" 
-                alt="Imagem do game indie Undertale">
-            <p>Undertale</p>
+            <div class="barra_titulo"></div>
 
-            <img src="https://alternativanerd.com.br/wp-content/uploads/2022/09/Rocket-League.jpg" 
-                alt="Imagem do game indie Rocket-League">
-            <p>Rocket-League</p>
+            <div class="topicos">
+                <ul>
+                    <li class="list_topicos"><i class="bi bi-arrow-return-right"></i> O termo é uma forma abreviada para um jogo independente;</li>
 
-            <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/h/hollow-knight-switch/hero" 
-                alt="Imagem do game indie Hollow Knight">
-            <p>Hollow Knight</p>
+                    <li class="list_topicos"><i class="bi bi-arrow-return-right"></i> Geralmente é produzido de modo autônomo, sem apoio financeiro de uma empresa externa;</li>
+
+                    <li class="list_topicos"><i class="bi bi-arrow-return-right"></i> O mercado dos indies vem passando por uma revolução graças ao surgimento de novas ferramentas de desenvolvimento e outros fatores.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="barra"></div>
+
+        <div class="div_topicos">
+            <h3 class="titulo_topico">EXEMPLOS DE INDIE GAMES:</h3>
+
+            <div class="barra_titulo"></div>
+
+            <div class="topicos">
+                <div class="slide">
+                    <div class="slides">
+                    
+                        <div id="voltar" class="btn">
+                            <i class="bi bi-arrow-left-short"></i>
+                        </div>
+                        <div id="next" class="btn">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </div>
+
+                        <div id="atual" class="images">
+                            <img src="./img/minecraft.jpg" alt="Imagem do jogo indie Minecraft">
+                        </div>
+
+                        <div class="images">
+                            <img src="./img/undertale.jpg" alt="Imagem do jogo indie Undertale">
+                        </div>
+
+                        <div class="images">
+                            <img src="./img/rocketleague.jpg" alt="Imagem do jogo indie Rocket League">
+                        </div>
+
+                        <div class="images">
+                            <img src="./img/hollowknight.jpg" alt="Imagem do jogo indie Hollow Knight">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sections">
+                    <div id="0"></div>
+                    <div id="1"></div>
+                    <div id="2"></div>
+                    <div id="3"></div>
+                </div>
+            </div>
         </div>
     </section>
-
+    
     <footer>
-
-        <p>Ranked Indie Games &#169;</p>
-        <nav>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">REVIEWS</a></li>
-                <li><a href="">NOTÍCIAS</a></li>
-            </ul>
-        </nav>
+        <div id="div_footer">
+            <p>Ranked Indie Games</p>
+            <p id="p_footer">Desenvolvido por Gustavo Oki</p>
+        </div>
     </footer>
 
-
-
-    
+    <script src="./script/carrossel.js"></script>
 </body>
 </html>
