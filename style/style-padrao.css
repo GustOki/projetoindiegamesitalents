@@ -114,6 +114,7 @@ footer {
     .container {
         display: flex;
         align-items: center;
+        margin-left: 1rem;
     }
 
     .container__icon {
@@ -132,10 +133,11 @@ footer {
     }
 
     .lista-menu__item {
-        padding: 1em;
+        padding: 1rem;
         background-color: var(--cor-menu);
         font-family: var(--fonte-texto);
         font-weight: 700;
+        width: 50%;
     }
 
     .lista-menu__link {
@@ -144,7 +146,22 @@ footer {
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-transform: uppercase;
+        margin-left: 1rem;
     }
+
+    .container__botao {
+        display: none;
+    }
+
+    .barra_menu{
+        border-bottom: 1px solid var(--background);
+    }
+
+    .div_titulo {
+        margin: 2rem;
+    }
+
+
 }
 
 @media screen and (min-width: 1024px) {
