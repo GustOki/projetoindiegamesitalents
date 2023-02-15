@@ -4,8 +4,9 @@
 :root {
     --background: #000a46;
     --cor-header-footer: #00106d;
-    --cor-secao: #000a3a;
+    --cor-secao: #00072b;
     --cor-titulo: #00aaff;
+    --cor-card: #0074ad48;
     --cor-texto: beige;
     --cor-destaque: #ffc501;
     --fonte-titulo: 'Press Start 2P';
@@ -38,13 +39,21 @@ body {
     color: var(--cor-texto);
     font-family: var(--fonte-texto);
     font-size: 24px;
-    padding: 0 5rem 0 4rem;
+    padding: 1rem 1rem;
+    margin: 0 3rem 0 3rem;
+    transition: 0.5s;
+}
+
+.text_menu:hover {
+    color: var(--cor-destaque);
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 #titulo_header {
     font-family: var(--fonte-titulo);
     font-size: 30px;
-    color: var(--cor-titulo);
+    color: var(--cor-destaque);
 }
 
 /* estilização do footer */
