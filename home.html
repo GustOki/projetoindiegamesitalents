@@ -67,40 +67,43 @@
 
             <div class="barra_titulo"></div>
 
-            <div class="topicos">
-                <div class="slide">
-                    <div class="slides">
-                    
-                        <div id="voltar" class="btn">
-                            <i class="bi bi-arrow-left-short"></i>
-                        </div>
-                        <div id="next" class="btn">
-                            <i class="bi bi-arrow-right-short"></i>
-                        </div>
-
-                        <div id="atual" class="images">
-                            <img src="./img/minecraft.jpg" alt="Imagem do jogo indie Minecraft">
-                        </div>
-
-                        <div class="images">
-                            <img src="./img/undertale.jpg" alt="Imagem do jogo indie Undertale">
-                        </div>
-
-                        <div class="images">
-                            <img src="./img/rocketleague.jpg" alt="Imagem do jogo indie Rocket League">
-                        </div>
-
-                        <div class="images">
-                            <img src="./img/hollowknight.jpg" alt="Imagem do jogo indie Hollow Knight">
-                        </div>
+            <div class="slider">
+            
+                <div class="slides">
+                    <!-- Radio buttons -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                        
+                    <!-- imagens -->
+                    <div class="slide first">
+                        <img src="./img/minecraft.jpg" alt="Imagem do jogo indie Minecraft">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/undertale.jpg" alt="Imagem do jogo indie Undertale">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/rocketleague.jpg" alt="Imagem do jogo indie Rocket League">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/hollowknight.jpg" alt="Imagem do jogo indie Hollow Knight">
+                    </div>
+                        
+                    <!-- Navigation auto -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
                     </div>
                 </div>
-                
-                <div class="sections">
-                    <div id="0"></div>
-                    <div id="1"></div>
-                    <div id="2"></div>
-                    <div id="3"></div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
             </div>
         </div>
