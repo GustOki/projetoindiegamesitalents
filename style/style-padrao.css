@@ -9,6 +9,7 @@
     --cor-card: #0074ad48;
     --cor-texto: beige;
     --cor-destaque: #ffc501;
+    --cor-menu: #2a40b9;
     --fonte-titulo: 'Press Start 2P';
     --fonte-texto: 'Oswald';
 }
@@ -73,4 +74,81 @@ footer {
 
 #p_footer {
     margin-top: 1rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    .menu .ul-menu {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+
+    .bi-list {
+        font-size: 24px;
+        color: var(--cor-destaque);
+    }
+
+    .container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer>.bi-list {
+        color: var(--background);
+    }
+    
+    .container__botao:checked~.container__rotulo {
+        background: var(--cor-destaque);
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .container__icon {
+        padding: 1em;
+    }
+
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+    }
+
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+
+    .lista-menu__item {
+        padding: 1em;
+        background-color: var(--cor-menu);
+        font-family: var(--fonte-texto);
+        font-weight: 700;
+    }
+
+    .lista-menu__link {
+        background: var(--cor-texto);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: none;
+    }
 }
