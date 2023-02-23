@@ -1,6 +1,6 @@
 @import url(./style-padrao.css);
 
-/* estilização da seção inicial */
+/* estlização da seção inicial */
 
 #secao_inicial {
     display: flex;
@@ -28,7 +28,9 @@
 #secao_reviews {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: var(--cor-secao);
+    width: 100%;
 }
 
 .div_reviews {
@@ -37,14 +39,21 @@
     border: 1px solid var(--cor-card);
     border-radius: 15px;
     background-color: var(--cor-card);
-    width: 80%;
-    margin: 1.5rem 9rem;
+    width: 85%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.div_reviews_responsivo {
+    display: none;
 }
 
 .card_review {
     margin: 1rem;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .img_review img {
@@ -54,49 +63,60 @@
 }
 
 .review_conteudo {
-    margin: 0 1rem;
+    width: 100%;
+    margin-left: 1.5rem;
 }
 
 .titulo_card_review {
     font-family: var(--fonte-texto);
     font-weight: 700;
-    font-size: 50px;
+    font-size: 60px;
     color: var(--cor-destaque);
-    margin: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 .barra_titulo {
     display: flex;
-    margin-top: 1rem;
-    margin-left: 1rem;
     border-bottom: 2px solid var(--cor-destaque);
-    width: 33%;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .review {
     font-family: var(--fonte-texto);
     color: var(--cor-texto);
     font-size: 20px;
-    margin-left: 1rem;
+    width: 100%;
     margin-top: 2rem;
-    margin-bottom: 2.5rem;
+    height: 75px;
+}
+
+.publicacao {
+    font-family: var(--fonte-texto);
+    color: var(--cor-destaque);
+    margin-top: 2rem;
+}
+
+.div_btn {
+    display: flex;
+    justify-content: end;
 }
 
 .btn_review {
-    margin-left: 28rem;
     font-family: var(--fonte-texto);
     font-size: 24px;
     border: 2px solid var(--cor-texto);
     border-radius: 20px;
     background-color: transparent;
-    padding: 0.5rem;
-    width: 25%;
+    width: 35%;
     cursor: pointer;
     transition: 0.5s;
+    margin-top: 1.5rem;
+    padding: 0;
 }
 
 .btn_review a {
-    padding: 0 1.4rem;
     text-decoration: none;
     color: var(--cor-texto);
     transition: 0.5s;
@@ -111,4 +131,88 @@
 .btn_review a:hover {
     color: black;
     transition: 0.5s;
+}
+
+@media screen and (min-width: 280px) and (max-width: 768px){
+    #secao_inicial {
+        justify-content: center;
+        height: 150px;
+    }
+
+    #titulo_inicial {
+        margin: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #p_inicial {
+        margin: 0;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* estilização da seção de reviews */
+
+    .div_reviews {
+        display: none;
+    }
+
+    .div_reviews_responsivo{
+        display: flex;
+        justify-content: center;
+        border: 1px solid var(--cor-card);
+        border-radius: 15px;
+        background-color: var(--cor-card);
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .card_review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .img_review {
+        transform: scale(0.5);
+        height: 220px;
+    }
+
+    .review_conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%
+    }
+
+    .titulo_card_review {
+        margin: 0;
+        font-size: 30px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    .barra_titulo {
+        margin: 0;
+        margin-top: 1rem;
+        width: 85%;
+    }
+
+    .review {
+        display: none;
+    }
+
+    .btn_review {
+        margin: 0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 60%;
+    }
+
 }

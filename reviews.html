@@ -13,7 +13,44 @@
 </head>
 <body>
     <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__icon"><i class="bi bi-list"></i></span>
+            </label>
+            <ul class="lista-menu">
+
+                <li class="lista-menu__item">
+                    <a href="home.html" class="lista-menu__link">HOME</a>
+                </li>
+
+                <div class="barra_menu"></div>
+
+                <li class="lista-menu__item">
+                    <a href="reviews.html" class="lista-menu__link">REVIEWS</a>
+                </li>
+
+                <div class="barra_menu"></div>
+
+                <li class="lista-menu__item">
+                    <a href="news.html" class="lista-menu__link">NEWS</a>
+                </li>
+
+                <div class="barra_menu"></div>
+
+                <li class="lista-menu__item">
+                    <a href="trailers.html" class="lista-menu__link">TRAILERS</a>
+                </li>
+            </ul>
+
+            <div class="div_titulo_abreviado">
+                <h1 id="titulo_header_abreviado">RIGames</h1>
+            </div>
+
+        </div>
+        
         <nav class="menu">
+
             <ul class="ul-menu">
                     <a href="home.html" class="text_menu">
                         <li class="li_text">HOME</li>
@@ -23,9 +60,9 @@
                         <li class="li_text">REVIEWS</li>
                     </a>
 
-                <div class="div_titulo">
-                    <h1 id="titulo_header">RankedIndieGames</h1>
-                </div>
+                    <div class="div_titulo">
+                        <h1 id="titulo_header">RankedIndieGames</h1>
+                    </div>
 
                     <a href="news.html" class="text_menu">
                         <li class="li_text">NEWS</li>
@@ -59,7 +96,9 @@
                 
                     <p class="review">"Em poucos minutos de jogo, Cuphead provou ser um game mais do que especial e diferente de qualquer outro no gênero." <strong>By IGN</strong></p>
                     
-                    <button class="btn_review"><a href="https://br.ign.com/cuphead/54013/review/review-cuphead">LER MAIS</a></button>
+                    <div class="div_btn">
+                        <button class="btn_review"><a href="https://br.ign.com/cuphead/54013/review/review-cuphead">LER MAIS</a></button>
+                    </div>
                 </div>
             </div>            
         </div>
@@ -68,7 +107,7 @@
             <div class="card_review">
                 <div class="img_review">
                     <img src="./img/celeste.jpg" 
-                        alt="Imagem do game indie Cuphead">
+                        alt="Imagem do game indie Celeste">
                 </div>
 
                 <div class="review_conteudo">
@@ -78,7 +117,9 @@
                 
                     <p class="review">"Celeste é um daqueles jogos que fará você morrer muito, mas é impressionante como ele não me frustrou hora nenhuma." <strong>By Nintendo Lovers</strong></p>
                     
-                    <button class="btn_review"><a href="https://nintendolovers.com/2019/01/17/review-celeste/">LER MAIS</a></button>
+                    <div class="div_btn">
+                        <button class="btn_review"><a href="https://nintendolovers.com/2019/01/17/review-celeste/">LER MAIS</a></button>
+                    </div>
                 </div>
             </div>            
         </div>
@@ -87,7 +128,7 @@
             <div class="card_review">
                 <div class="img_review">
                     <img src="./img/shovelknight.jpg" 
-                        alt="Imagem do game indie Cuphead">
+                        alt="Imagem do game indie Shovel Knight">
                 </div>
 
                 <div class="review_conteudo">
@@ -97,10 +138,65 @@
                 
                     <p class="review">"Obrigatório para os fãs de jogos antigos, Shovel Knight é um lembrete de que antigas fórmulas continuam atuais." <strong>By TechTudo</strong></p>
                     
-                    <button class="btn_review"><a href="https://www.techtudo.com.br/review/shovel-knight.ghtml">LER MAIS</a></button>
+                    <div class="div_btn">
+                        <button class="btn_review"><a href="https://www.techtudo.com.br/review/shovel-knight.ghtml">LER MAIS</a></button>
+                    </div>
                 </div>
             </div>            
         </div>
+
+        <!-- seção news responsivo -->
+        <div class="div_reviews_responsivo">
+            <div class="card_review">
+                <div class="img_review">
+                    <img src="./img/cuphead.jpg" 
+                        alt="Imagem do game indie Cuphead">
+                </div>
+
+                <div class="review_conteudo">
+                    <h2 class="titulo_card_review">CUPHEAD</h2>
+
+                    <div class="barra_titulo"></div>
+                    
+                    <button class="btn_review"><a href="https://br.ign.com/cuphead/54013/review/review-cuphead">LER MAIS</a></button>
+                </div>
+            </div>            
+        </div>
+
+        <div class="div_reviews_responsivo">
+            <div class="card_review">
+                <div class="img_review">
+                    <img src="./img/celeste.jpg" 
+                        alt="Imagem do game indie Celeste">
+                </div>
+
+                <div class="review_conteudo">
+                    <h2 class="titulo_card_review">CELESTE</h2>
+
+                    <div class="barra_titulo"></div>
+                    
+                    <button class="btn_review"><a href="https://nintendolovers.com/2019/01/17/review-celeste/">LER MAIS</a></button>
+                </div>
+            </div>      
+        </div>
+
+        <div class="div_reviews_responsivo">
+            <div class="card_review">
+                <div class="img_review">
+                    <img src="./img/shovelknight.jpg" 
+                        alt="Imagem do game indie Shovel Knight">
+                </div>
+
+                <div class="review_conteudo">
+                    <h2 class="titulo_card_review">SHOVEL KNIGHT</h2>
+
+                    <div class="barra_titulo"></div>
+                    
+                    <button class="btn_review"><a href="https://www.techtudo.com.br/review/shovel-knight.ghtml">LER MAIS</a></button>
+                </div>     
+            </div>
+        </div>
+
     </section>
 
     <footer>

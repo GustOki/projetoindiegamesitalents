@@ -13,7 +13,44 @@
 </head>
 <body>
     <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__icon"><i class="bi bi-list"></i></span>
+            </label>
+            <ul class="lista-menu">
+
+                <li class="lista-menu__item">
+                    <a href="home.html" class="lista-menu__link">HOME</a>
+                </li>
+
+                <div class="barra_menu"></div>
+
+                <li class="lista-menu__item">
+                    <a href="reviews.html" class="lista-menu__link">REVIEWS</a>
+                </li>
+
+                <div class="barra_menu"></div>
+
+                <li class="lista-menu__item">
+                    <a href="news.html" class="lista-menu__link">NEWS</a>
+                </li>
+
+                <div class="barra_menu"></div>
+
+                <li class="lista-menu__item">
+                    <a href="trailers.html" class="lista-menu__link">TRAILERS</a>
+                </li>
+            </ul>
+
+            <div class="div_titulo_abreviado">
+                <h1 id="titulo_header_abreviado">RIGames</h1>
+            </div>
+
+        </div>
+        
         <nav class="menu">
+
             <ul class="ul-menu">
                     <a href="home.html" class="text_menu">
                         <li class="li_text">HOME</li>
@@ -23,9 +60,9 @@
                         <li class="li_text">REVIEWS</li>
                     </a>
 
-                <div class="div_titulo">
-                    <h1 id="titulo_header">RankedIndieGames</h1>
-                </div>
+                    <div class="div_titulo">
+                        <h1 id="titulo_header">RankedIndieGames</h1>
+                    </div>
 
                     <a href="news.html" class="text_menu">
                         <li class="li_text">NEWS</li>
@@ -61,7 +98,9 @@
 
                     <p class="publicacao">Publicado em: 20 de Dezembro de 2022 às 18:27</p>
                     
-                    <button class="btn_new"><a href="https://br.ign.com/ign-indie/104936/feature/9-games-indie-mais-aguardados-de-2023">LER MAIS</a></button>
+                    <div class="div_btn">
+                        <button class="btn_new"><a href="https://br.ign.com/ign-indie/104936/feature/9-games-indie-mais-aguardados-de-2023">LER MAIS</a></button>
+                    </div>
                 </div>
             </div>            
         </div>
@@ -82,7 +121,9 @@
 
                     <p class="publicacao">Publicado em: 8 de Outubro de 2022 às 19:46</p>
                     
-                    <button class="btn_new"><a href="https://br.ign.com/indie/103021/news/bgs-2022-shattered-heaven-e-um-rpg-roguelike-indie-com-cartas-que-chega-em-2022">LER MAIS</a></button>
+                    <div class="div_btn">
+                        <button class="btn_new"><a href="https://br.ign.com/indie/103021/news/bgs-2022-shattered-heaven-e-um-rpg-roguelike-indie-com-cartas-que-chega-em-2022">LER MAIS</a></button>
+                    </div>
                 </div>
             </div>            
         </div>
@@ -103,7 +144,9 @@
 
                     <p class="publicacao">Publicado em: 29 de Agosto de 2022 às 15:00</p>
                     
-                    <button class="btn_new"><a href="https://br.ign.com/ign-indie/101821/news/big-earth-game-indie-brasileiro-retrata-o-futuro-do-planeta-terra">LER MAIS</a></button>
+                    <div class="div_btn">
+                        <button class="btn_new"><a href="https://br.ign.com/ign-indie/101821/news/big-earth-game-indie-brasileiro-retrata-o-futuro-do-planeta-terra">LER MAIS</a></button>
+                    </div>
                 </div>
             </div>            
         </div>
@@ -124,11 +167,90 @@
 
                     <p class="publicacao">Publicado em: 15 de Janeiro de 2022 às 17:00</p>
                     
-                    <button class="btn_new"><a href="https://br.ign.com/indie/95813/news/the-cleaner-indie-e-inspirado-em-john-wick-e-hotline-miami">LER MAIS</a></button>
+                    <div class="div_btn">
+                        <button class="btn_new"><a href="https://br.ign.com/indie/95813/news/the-cleaner-indie-e-inspirado-em-john-wick-e-hotline-miami">LER MAIS</a></button>
+                    </div>
                 </div>
             </div>            
         </div>
-        
+
+        <!-- seção news responsivo -->
+        <div class="div_news_responsivo">
+            <div class="card_news">
+                <div class="img_news">
+                    <img src="./img/news/novosjogos.webp" 
+                        alt="Imagem do game indie Hollow Knight: Silksong">
+                </div>
+
+                <div class="new_conteudo">
+                    <h2 class="titulo_card_new">9 games indie mais aguardados de 2023</h2>
+
+                    <div class="barra_titulo"></div>
+
+                    <p class="publicacao">Publicado em: 20 de Dezembro de 2022 às 18:27</p>
+                    
+                    <button class="btn_new"><a href="https://br.ign.com/ign-indie/104936/feature/9-games-indie-mais-aguardados-de-2023">LER MAIS</a></button>
+                </div>
+            </div>            
+        </div>
+
+        <div class="div_news_responsivo">
+            <div class="card_news">
+                <div class="img_news">
+                    <img src="./img/news/shatteredheaven.jpg" 
+                        alt="Imagem do game indie Shattered Heaven">
+                </div>
+
+                <div class="new_conteudo">
+                    <h2 class="titulo_card_new">Shattered Heaven é um RPG roguelike indie com cartas, que chega em 2022</h2>
+
+                    <div class="barra_titulo"></div>
+
+                    <p class="publicacao">Publicado em: 8 de Outubro de 2022 às 19:46</p>
+                    
+                    <button class="btn_new"><a href="https://br.ign.com/indie/103021/news/bgs-2022-shattered-heaven-e-um-rpg-roguelike-indie-com-cartas-que-chega-em-2022">LER MAIS</a></button>
+                </div>
+            </div>      
+        </div>
+
+        <div class="div_news_responsivo">
+            <div class="card_news">
+                <div class="img_news">
+                    <img src="./img/news/bigearth.jpg" 
+                        alt="Imagem do game indie Big Earth">
+                </div>
+
+                <div class="new_conteudo">
+                    <h2 class="titulo_card_new">Big Earth: Game indie brasileiro retrata o futuro do planeta Terra</h2>
+
+                    <div class="barra_titulo"></div>
+
+                    <p class="publicacao">Publicado em: 29 de Agosto de 2022 às 15:00</p>
+                    
+                    <button class="btn_new"><a href="https://br.ign.com/ign-indie/101821/news/big-earth-game-indie-brasileiro-retrata-o-futuro-do-planeta-terra">LER MAIS</a></button>
+                </div>     
+            </div>
+        </div>
+
+        <div class="div_news_responsivo">
+            <div class="card_news">
+                <div class="img_news">
+                    <img src="./img/news/thecleaner.jpg" 
+                        alt="Imagem do game indie The Cleaner">
+                </div>
+
+                <div class="new_conteudo">
+                    <h2 class="titulo_card_new">The Cleaner: Indie é inspirado em John Wick e Hotline Miami</h2>
+
+                    <div class="barra_titulo"></div>
+
+                    <p class="publicacao">Publicado em: 15 de Janeiro de 2022 às 17:00</p>
+                    
+                    <button class="btn_new"><a href="https://br.ign.com/indie/95813/news/the-cleaner-indie-e-inspirado-em-john-wick-e-hotline-miami">LER MAIS</a></button>
+                </div>
+            </div>      
+        </div>
+
     </section>
 
     <footer>

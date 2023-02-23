@@ -28,28 +28,37 @@
 #secao_trailers {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: var(--cor-secao);
 }
 
 .div_trailers {
     display: flex;
     justify-content: center;
-    /* border: 1px solid var(--cor-card); */
     border-radius: 15px;
     background-color: var(--cor-card);
     width: 80%;
-    margin: 1.5rem 9rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.div_trailers_responsivo {
+    display: none;
 }
 
 .card_trailers {
-    margin: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    margin: 1.5rem;
 }
 
 .trailer_conteudo {
-    width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo_card_trailer {
@@ -57,28 +66,30 @@
     font-weight: 700;
     font-size: 50px;
     color: var(--cor-destaque);
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .barra_titulo {
     display: flex;
-    margin-top: 1rem;
-    margin-left: 1rem;
     border-bottom: 2px solid var(--cor-destaque);
-    width: 96%;
+    width: 100%;
 }
 
 .publicacao {
     font-family: var(--fonte-texto);
     color: var(--cor-destaque);
-    margin-left: 1rem;
-    margin-top: 2rem;
+    font-size: 25px;
+    margin-top: 1rem;
 }
 
-.trailer iframe {
-    margin-top: 2rem;
-    width: 800px;
-    height: 450px;
+.trailer {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
     border-radius: 20px;
 }
 
@@ -88,9 +99,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 1rem;
-    padding: 0.5rem;
-    width: 800px;
+    width: 100%;
+    margin-top: 1.5rem;
 }
 
 .btn-feed {
@@ -109,4 +119,66 @@
     color: black;
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+/* media queries */
+
+@media screen and (min-width: 280px) and (max-width: 768px){
+    #secao_inicial {
+        justify-content: center;
+        height: 150px;
+    }
+
+    #titulo_inicial {
+        margin: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #p_inicial {
+        margin: 0;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    /* estilização da seção de trailers */
+    .div_trailers{
+        display: none;
+    }
+
+    .div_trailers_responsivo {
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: var(--cor-card);
+        width: 85%;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card_trailers {
+        margin: 1rem;
+    }
+
+    .titulo_card_trailer {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .publicacao {
+        font-size: 20px;
+    }
+
+    .trailer {
+        width: 100%;
+        height: 250px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
